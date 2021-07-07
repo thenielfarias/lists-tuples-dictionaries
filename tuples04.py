@@ -62,3 +62,7 @@ except:
 
 print(f'O número nove foi digitado {cont9} vez(es)')
 print(f'O número três foi digitado primeiramente na posição {primeira_pos3}')
+
+
+
+
