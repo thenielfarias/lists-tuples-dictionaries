@@ -3,9 +3,13 @@ nums = ("zero", "um", "dois", "três", "quatro", "cinco",
            "doze", "treze", "quatorze", "quinze", "dezesseis",
            "dezessete", "dezoito", "dezenove", "vinte")
 
-userNum = int(input("Digite um número entre 0 e 20: "))
-if userNum < 0 or userNum > 20:
-    userNum = int(input("Número inválido, tente novamente. Digite um número: ")) 
+while True:
+    userNum = int(input("Digite um número entre 0 e 20: "))
+    if 0 <= userNum <= 20:
+        break
+    print("Número inválido, tente novamente.", end=' ')
 print('Você digitou o número {}'.format(nums[userNum]))
+
+
 
 
