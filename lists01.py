@@ -21,4 +21,6 @@ print(f'O maior valor digitado foi {maior} nas posições ', end='')
 for i, v in enumerate(lista_numeros):
     if v == maior:
         print(f'{i}...', end='')
-print()        
+print()
+
+
