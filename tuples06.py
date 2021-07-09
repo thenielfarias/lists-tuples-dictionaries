@@ -5,3 +5,4 @@ for words in instruments:
         if letters.lower() in 'aeiou':
             print(letters, end=' ')
 
+
