@@ -18,3 +18,5 @@ if 5 in lista:
 else:
     print('O valor 5 não faz parte da lista')
 
+
+  
