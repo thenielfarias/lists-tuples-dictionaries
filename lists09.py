@@ -1,32 +1,23 @@
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-
+soma_pares = soma_col3 = maior_lin2 = 0
 for l in range(0, 3):
     for c in range(0, 3):
         matriz[l][c] = int(input(f'Digite um valor para [{l}, {c}]: '))
-print('-'*30)
+print('=-'*20)
 for l in range(0, 3):
     for c in range(0, 3):
         print(f'[{matriz[l][c]:^5}]', end='')
+        if matriz[l][c] % 2 == 0:
+            soma_pares += matriz[l][c]    
     print()
-
-'''matriz = [[], [], []]
-
-c0 = c1 = c2 = 0
-while True:
-    for el in range(0, 3):
-        matriz[0].append(int(input(f'Digite um valor para [0, {c0}]: ')))
-        c0 += 1
-    for el in range(0, 3):
-        matriz[1].append(int(input(f'Digite um valor para [1, {c1}]: ')))
-        c1 += 1
-    for el in range(0, 3):
-        matriz[2].append(int(input(f'Digite um valor para [2, {c2}]: ')))
-        c2 += 1        
-    break
-
-print('-'*30)
-print(f'[ {matriz[0][0]} ] [ {matriz[0][1]} ] [ {matriz[0][2]} ]')
-print(f'[ {matriz[1][0]} ] [ {matriz[1][1]} ] [ {matriz[1][2]} ]')
-print(f'[ {matriz[2][0]} ] [ {matriz[2][1]} ] [ {matriz[2][2]} ]')'''
+print('=-'*20)
+print(f'A soma dos valores pares é {soma_pares}.')
+for l in range(0, 3):
+    soma_col3 += matriz[l][2]
+print(f'A soma dos valores da 3º coluna é {soma_col3}.')
+for c in range(0, 3):
+    if matriz[1][c] > maior_lin2:
+        maior_lin2 = matriz[1][c]
+print(f'O maior valor da 2º linha é {maior_lin2}')
 
 
