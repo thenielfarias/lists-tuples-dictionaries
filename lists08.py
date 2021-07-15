@@ -9,3 +9,5 @@ for el in range(1, 8):
 
 print(f'Os valores pares digitados foram: {lista7[0]}')
 print(f'Os valores ímpares digitados foram: {lista7[1]}')
+
+
