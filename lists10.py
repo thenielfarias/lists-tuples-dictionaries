@@ -25,3 +25,5 @@ for i, l in enumerate(jogos):
     print(f'Jogo {i+1}: {l}')
     sleep(0.5)
 print('*'*5, f' BOA SORTE! ', '*'*5)
+
+
