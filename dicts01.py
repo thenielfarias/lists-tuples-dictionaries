@@ -1,5 +1,4 @@
 aluno = dict()
-ficha = list()
 for c in range(0, 1):
     aluno['nome'] = str(input('Nome: '))
     aluno['media'] = float(input(f'Média de {aluno["nome"]}: '))
