@@ -44,6 +44,5 @@ while True:
     for el in range(aproveitamento_jogadores[dadosJogador]["partidas"]):
         print(f'No jogo {el+1} fez {lista_gols[cont]} gols.')
         cont += 1
-            
-            
-            
+
+
